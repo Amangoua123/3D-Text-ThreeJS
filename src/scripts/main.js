@@ -25,13 +25,13 @@ const scene = new THREE.Scene();
 
 // textures
 const textLoader = new THREE.TextureLoader();
-const mapCapTexture = textLoader.load("./textures/matcaps/8.png");
+const mapCapTexture = textLoader.load("/textures/matcaps/8.png");
 
 // Fonts
 
 const fontLoader = new FontLoader();
 
-fontLoader.load("./fonts/helvetiker_regular.typeface.json", (font) => {
+fontLoader.load("/fonts/helvetiker_regular.typeface.json", (font) => {
   const textGeometry = new TextGeometry("Hello Three.js", {
     font: font,
     size: 0.5,
